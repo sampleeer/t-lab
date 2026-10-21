@@ -23,7 +23,6 @@ def ranking(frame, scores, relevance, k=10):
     metrics['users'] = len(rows)
     if 'label' in frame and frame.label.nunique() == 2:
         p = np.clip(np.asarray(scores), 1e-7, 1-1e-7)
-        # Only probability predictions should request these, see caller.
         if np.min(scores) >= 0 and np.max(scores) <= 1:
             metrics['sampled_pair_logloss'] = float(log_loss(frame.label, p))
             metrics['sampled_pair_auc'] = float(roc_auc_score(frame.label, scores))
@@ -33,7 +32,6 @@ def ranking(frame, scores, relevance, k=10):
 def bootstrap(values, seed=42, repetitions=2000):
     values = np.asarray(values, dtype=float)
     rng = np.random.default_rng(seed)
-    # Batches keep memory bounded as the dataset grows.
     estimates = []
     for start in range(0, repetitions, 100):
         n = min(100, repetitions-start)

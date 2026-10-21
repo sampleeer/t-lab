@@ -41,7 +41,7 @@ class ProtocolTests(unittest.TestCase):
         self.assertEqual(truth, {1: {20}, 2: {30}})
         self.assertEqual(audit['cold_target_users'], 1)
         self.assertEqual(audit['cold_item_target_pairs'], 1)
-        self.assertEqual(len(snap.history), 2)  # Exact cutoff belongs to target.
+        self.assertEqual(len(snap.history), 2)
 
     def test_missing_demographics_do_not_change_other_users_encoding(self):
         events = self.events.copy()
@@ -50,8 +50,6 @@ class ProtocolTests(unittest.TestCase):
         batch = snap.features(snap.generate([1, 3]))
         alone = snap.features(snap.generate([1]))
         a = batch.loc[batch.user_id == 1].reset_index(drop=True)
-        # Categorical dictionaries may contain unknown only in the larger batch;
-        # actual model input values must be identical.
         pd.testing.assert_frame_equal(a.astype(object), alone.astype(object))
         self.assertEqual(set(batch.loc[batch.user_id == 3, 'user_kids_flg']), {'unknown'})
 

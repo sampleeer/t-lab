@@ -1,4 +1,3 @@
-"""Pinned official archive; deliberately avoid the truncated standalone ZIP."""
 import argparse
 import hashlib
 import json
@@ -33,7 +32,6 @@ def main():
         if z.testzip() is not None:
             raise ValueError('Archive CRC verification failed')
         for name in ['interactions.csv', 'users.csv', 'items.csv']:
-            # Copy named members only, never extract untrusted paths.
             member = 'data_original/' + name
             (directory / name).write_bytes(z.read(member))
     manifest = {'url': URL, 'sha256': {

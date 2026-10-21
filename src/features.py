@@ -1,4 +1,3 @@
-"""Pure as-of snapshot: no labels or target-week records enter this class."""
 from collections import Counter
 import numpy as np
 import pandas as pd
@@ -16,7 +15,6 @@ def tokens(value, limit=None):
 
 
 def top_indices(scores, k):
-    # Full deterministic order; item index breaks ties.
     return np.lexsort((np.arange(len(scores)), -np.asarray(scores)))[:k]
 
 
@@ -59,7 +57,6 @@ class Snapshot:
             self.G[col] = g
             self.H[col] = self.B @ g
             self.H7[col] = self.B7 @ g
-        # Cosine of binary co-watch vectors, top 50 neighbors per item.
         co = (self.B.T @ self.B).tocsr()
         co.setdiag(0)
         co.eliminate_zeros()
@@ -71,7 +68,6 @@ class Snapshot:
                 idx = np.lexsort((co.indices[a:b], -co.data[a:b]))[50:] + a
                 co.data[idx] = 0
         co.eliminate_zeros()
-        # Recent history contributes more, but every past pair remains available.
         weighted = self.matrix(np.exp(-self.age / 30).astype(np.float32))
         self.CF = (weighted @ co).tocsr()
         g = self.G['genres'].tocsc()
@@ -150,8 +146,6 @@ class Snapshot:
                     values[sl] = np.asarray(table[ur[sl]].multiply(g[ir[sl]]).sum(axis=1)).ravel()
                 result[f'aff_{col}_{suffix}'] = values / lengths / np.maximum(1, self.count[ur])
         for col in ['age', 'income', 'sex', 'kids_flg']:
-            # Canonicalize numeric category before reindexing: a missing user
-            # otherwise turns int 1 into float 1.0 only in mixed-user batches.
             source = self.users[col].astype('float64') if col == 'kids_flg' else self.users[col]
             result['user_' + col] = source.reindex(result.user_id).fillna('unknown').astype(str).to_numpy()
         for col in ['content_type', 'age_rating', 'for_kids']:
@@ -170,7 +164,6 @@ class Snapshot:
 
 
 def targets(events, cutoff, warm_users, catalog):
-    """All next-week unique new recorded pairs, including unavailable items."""
     cutoff = pd.Timestamp(cutoff)
     future = events[(events.last_watch_dt >= cutoff) &
                     (events.last_watch_dt < cutoff + pd.Timedelta(days=7))]

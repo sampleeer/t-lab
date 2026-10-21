@@ -1,4 +1,3 @@
-"""Run stages separately: prepare -> fit/validation selection -> sealed test."""
 import argparse
 import gc
 import importlib.metadata
@@ -67,12 +66,9 @@ def prepare(config, raw, out):
         snap = Snapshot(data, items, users, cutoff, config['candidates'])
         truth, audit = targets(data, cutoff, snap.uids, snap.iids)
         if name.startswith('train'):
-            # Independent of future activity/labels; zeros for inactive users are kept.
             selected = np.sort(np.random.default_rng(config['seed']+j).choice(
                 snap.uids, min(config['train_users_per_snapshot'], len(snap.uids)), replace=False))
         else:
-            # Offline evaluation cohort only; candidate lists remain a pure function
-            # of past history and uid. Production can request any warm uid.
             selected = np.array(sorted(truth))
         pairs = snap.generate(selected)
         assert not pairs.duplicated(['user_id', 'item_id']).any()
@@ -103,8 +99,6 @@ def read_frame(path):
     f = pd.read_parquet(path)
     for col in f:
         if isinstance(f[col].dtype, pd.CategoricalDtype):
-            # Reuse category string objects, rather than materializing a separate
-            # Python string for every row of every categorical column.
             f[col] = f[col].astype(object)
     return f
 
@@ -130,7 +124,6 @@ def fit(config, out):
     val = read_frame(out / 'validation.parquet')
     truth = truth_for(out, 'validation')
     assert train.label.nunique() == val.label.nunique() == 2
-    # Inputs produced under exactly the same config; fail rather than silently mix.
     assert config == json.loads((out / 'manifest.json').read_text())['config']
     results = {'controls': {}, 'models': [], 'training_rows': len(train),
                'training_positives': int(train.label.sum())}
@@ -165,7 +158,6 @@ def fit(config, out):
         gc.collect()
     results['selected_model'] = best_idx
     results['selected_control'] = max(results['controls'], key=lambda k: results['controls'][k]['ndcg@10'])
-    # One preregistered ablation under selected params, same data and candidates.
     af = [c for c in features if not c.startswith(PERSONAL)]
     del train_pool, val_pool
     gc.collect()
@@ -195,7 +187,6 @@ def fit(config, out):
 
 
 def evaluate(config, out):
-    # Selection must exist before opening test features. No fitting in this stage.
     selected = json.loads((out / 'selection.json').read_text())
     assert config == json.loads((out / 'manifest.json').read_text())['config']
     frame = read_frame(out / 'test.parquet')
@@ -225,7 +216,6 @@ def evaluate(config, out):
             diff, config['seed'], config['bootstrap_repetitions'])
     frame[['user_id', 'item_id', 'label']].assign(**predictions).to_parquet(
         out / 'test_predictions.parquet', index=False)
-    # macOS ru_maxrss is bytes; Linux reports KiB.
     result['peak_rss_this_process_mb'] = peak_memory_mb()
     save_json(out / 'results.json', result)
     rows = [{'model': k, **v} for k, v in result['test'].items()]

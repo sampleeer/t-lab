@@ -1,4 +1,3 @@
-"""Bounded feature search with train-only screening and frozen test evaluation."""
 import argparse
 import gc
 import json
@@ -46,7 +45,7 @@ def prepare(config, baseline, out):
               'baseline_model_sha256':sha256(model_path),'snapshots':{}}
     for entry in bm['snapshots']:
         if entry['name']=='test':
-            continue  # Build test blocks only after selection is locked.
+            continue
         log(f"Generate 144 features: {entry['name']}")
         catalog,snapshot = build_snapshot(entry['name'],config,baseline,out)
         result['snapshots'][entry['name']] = snapshot
@@ -94,7 +93,6 @@ def screen(config,baseline,out):
     counts = np.bincount(group)
     residual -= (np.bincount(group,weights=residual)/counts)[group]
     x = np.empty((len(group),len(feature_names)),dtype=np.float32)
-    # Read one 12-column block at a time, not a full 1.8M x 144 matrix.
     for kernel,_,_ in kernels(config):
         cols = [c for c in feature_names if catalog[c]['kernel']==kernel]
         block = np.concatenate([pd.read_parquet(out/f'{name}_{kernel}.parquet',columns=cols)

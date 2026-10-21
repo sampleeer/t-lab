@@ -1,4 +1,3 @@
-"""Post-test description only; never selects or fits models."""
 import argparse
 import json
 from pathlib import Path
@@ -14,7 +13,6 @@ def main():
     args = p.parse_args()
     out, reports = Path(args.artifacts), Path(args.reports)
     reports.mkdir(parents=True, exist_ok=True)
-    # Require completed frozen-model test evaluation.
     json.loads((out / 'results.json').read_text())
     selection = json.loads((out / 'selection.json').read_text())
     manifest = json.loads((out / 'manifest.json').read_text())

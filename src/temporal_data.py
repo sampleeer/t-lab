@@ -1,4 +1,3 @@
-"""Shared data and ranking primitives for prequential robustness experiments."""
 import gc
 import json
 from pathlib import Path
@@ -24,7 +23,6 @@ def key(role,date):
 
 
 def sample_training_pairs(frame, limit, seed):
-    """Keep positives; HT weights correct uniform within-query negative draws."""
     rng=np.random.default_rng(seed)
     keep=frame.label.to_numpy()==1
     weights=np.ones(len(frame),dtype=float)
@@ -43,7 +41,6 @@ def sample_training_pairs(frame, limit, seed):
 
 
 class RankingContext:
-    """Full-truth macro metrics, equivalent to metrics.ranking, faster for grids."""
     def __init__(self,frame,truth,k=10):
         self.uids=np.array(sorted(truth))
         self.group=np.searchsorted(self.uids,frame.user_id.to_numpy())

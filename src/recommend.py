@@ -1,4 +1,3 @@
-"""Inspect frozen model recommendations for any warm user in the sample."""
 import argparse
 import json
 from pathlib import Path

@@ -1,4 +1,3 @@
-"""Nested temporal validation, weighted negative draws, and out-of-time screening."""
 import argparse
 import gc
 import json
@@ -76,7 +75,6 @@ def temporal_screen(train_keys,base,cats,config,fold,data):
             'learning_rate':config['learning_rate'],'l2_leaf_reg':config['l2_leaf_reg']}
     for j in range(1,len(train_keys)):
         held=train_keys[j]
-        # Labels of every prefix week end before the held-out feature cutoff.
         assert all(pd.Timestamp(k.removeprefix('train_'))+pd.Timedelta(days=7)
                    <=pd.Timestamp(held.removeprefix('train_')) for k in train_keys[:j])
         model_path=fold/f'prefix_{j}.cbm'

@@ -1,4 +1,3 @@
-"""Export tables and render the completed experiment from saved artifacts."""
 import json
 import shutil
 from pathlib import Path
@@ -35,7 +34,7 @@ def main():
         shutil.copyfile(auto/name,export/name)
     for variant in [chosen,selection['random_control'],selection['replacement']]:
         shutil.copyfile(auto/f"importance_{variant['name']}.csv",export/f"importance_{variant['name']}.csv")
-    # Secondary comparisons are descriptive, not additional model selection.
+
     replacement=pd.read_csv(auto/'test_users_auto_replacement.csv').set_index('user_id')
     secondary={}
     for control in ['catboost','recent_popularity']:
@@ -80,8 +79,8 @@ def main():
     aauc=results['test'][primary]['metrics']['sampled_pair_auc']
     report=f'''# Автоматическая генерация и отбор признаков для рекомендаций KION
 
-Итог выполненного исследования. Завершено 21 октября 2026 года.
-Код, конфигурации, численные результаты и инструкции воспроизведения приложены.
+Пилотный эксперимент: одна тестовая неделя, seed 42.
+Проверка на трёх неделях описана в [REPORT.md](REPORT.md).
 
 ## Результат
 
@@ -91,7 +90,7 @@ def main():
 95%-интервал включает ноль; Recall не улучшился. Отбор оказался лучше одного
 случайного набора того же размера. Проверка замены агрегатов дала сопоставимые
 точечные метрики при 26 признаках вместо 46, но формальная эквивалентность
-качества не доказана. Победа над baseline не заявляется.
+качества не доказана.
 
 | Подход | Признаков | Validation NDCG@10 | Test NDCG@10 | Test Recall@10 |
 |---|---:|---:|---:|---:|
@@ -161,9 +160,9 @@ learning_rate=0,06, l2=5, seed=42, 27 деревьев после останов
 
 ## Исследовательский метод
 
-Человек задаёт грамматику «сущность × временное ядро × агрегат», алгоритм
-перечисляет и отбирает комбинации. Это ограниченная автоматизация признаков,
-не неограниченная генерация SQL/LLM-агент и не заявление о новом универсальном AutoML.
+Признаки строятся по грамматике «сущность × временное ядро × агрегат».
+Набор допустимых операций фиксирован; алгоритм перечисляет комбинации
+и отбирает их по ошибкам baseline.
 
 Жёсткие окна: 1/3/5/10/14/21/45/60 дней. Плавные ядра: exp(−age/tau),
 tau=3/10/21/60 дней. Для каждого из 12 ядер — 12 признаков: числа строк,
@@ -231,10 +230,9 @@ tau=3/10/21/60 дней. Для каждого из 12 ядер — 12 приз�
 допуск non-inferiority не задавался, тест на неухудшение не проводился.
 Основной метод после просмотра этих результатов не менялся.
 
-## Что сработало и почему выигрыш ограничен
+## Обсуждение
 
-Факты: автоматическая генерация и фильтрация технически работают;
-отобранный набор лучше фиксированного случайного контроля; увеличение
+Отобранный набор лучше фиксированного случайного контроля; увеличение
 набора с 12 до 24 ухудшило validation NDCG. Автоматическое дополнение
 повысило глобальный ROC-AUC по кандидатам с {number(bauc)} до {number(aauc)},
 но это не дало подтверждённого выигрыша в ранжировании внутри пользователя.
@@ -317,8 +315,8 @@ python -m src.final_report
 
 Если baseline уже подготовлен, начинайте с `src.auto_pipeline prepare`.
 Конфигурации: [baseline](config.json), [автоотбор](auto_config.json).
-Восемь тестов прошли: временные границы, влияние будущего, кандидаты/метрики,
-категории при пропусках, нормализация и затухание автопризнаков.
+Тесты проверяют временные границы, влияние будущих записей, кандидаты, метрики,
+пропуски категорий, нормализацию и затухание автопризнаков.
 Полные результаты: [CSV сравнения](reports/final_comparison.csv),
 [JSON нового эксперимента](reports/auto/results.json),
 [дополнительные сравнения](reports/auto/secondary_comparisons.json).
@@ -330,7 +328,6 @@ python -m src.final_report
 Источник: Petrov et al. (2022), *MTS Kion Implicit Contextualised Sequential
 Dataset for Movie Recommendation*, RecSys CARS Workshop;
 [поля и даты данных](https://ods.ai/competitions/competition-recsys-21/data).
-Yambda в этом исследовании не использовался: задание допускает один набор данных.
 '''
     Path('PILOT_REPORT.md').write_text(report,encoding='utf-8')
     if Path('artifacts/robustness/results.json').exists():
@@ -338,7 +335,7 @@ Yambda в этом исследовании не использовался: з�
         render_robust()
     else:
         Path('REPORT.md').write_text(report,encoding='utf-8')
-    print('Pilot and current report generated from saved results.')
+    print('Saved reports')
 
 
 if __name__=='__main__':main()
