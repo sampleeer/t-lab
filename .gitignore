@@ -3,3 +3,7 @@ artifacts/
 __pycache__/
 .venv/
 .DS_Store
+
+*.log
+.pytest_cache/
+.cache/
