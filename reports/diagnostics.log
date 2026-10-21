@@ -1,0 +1,10 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+         users  catboost_ndcg  catboost_recall  control_ndcg  control_recall  candidate_recall
+segment                                                                                       
+1          758        0.18979          0.28979       0.19054         0.30226           0.62296
+2–5       1735        0.16250          0.24480       0.16133         0.26095           0.57038
+6–20      2204        0.11962          0.17814       0.11874         0.18596           0.48221
+21+       1001        0.08389          0.10732       0.08707         0.11735           0.36793

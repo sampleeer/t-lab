@@ -1,0 +1,13 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+15:39:58 Prepare eval_2021-07-26
+15:40:13 Prepare eval_2021-08-02
+15:40:30 Prepare eval_2021-08-09
+15:40:41 Prepare eval_2021-08-16
+15:40:53 Prepare train_2021-07-05
+15:40:57 Prepare train_2021-07-12
+15:41:01 Prepare train_2021-07-19
+15:41:02 Prepare train_2021-07-26
+15:41:04 Prepare train_2021-08-02

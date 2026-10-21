@@ -1,0 +1,29 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+17:09:06 Fit model 0: {'depth': 5, 'iterations': 400, 'learning_rate': 0.06, 'l2_leaf_reg': 5}, rows=1785275, features=46
+0:	learn: 0.4899964	test: 0.5065478	best: 0.5065478 (0)	total: 1.28s	remaining: 8m 29s
+Stopped by overfitting detector  (60 iterations wait)
+
+bestTest = 0.03448731014
+bestIteration = 25
+
+Shrink model to first 26 iterations.
+17:11:19 Fit model 1: {'depth': 7, 'iterations': 400, 'learning_rate': 0.06, 'l2_leaf_reg': 5}, rows=1785275, features=46
+0:	learn: 0.4897094	test: 0.5067004	best: 0.5067004 (0)	total: 1.86s	remaining: 12m 22s
+Stopped by overfitting detector  (60 iterations wait)
+
+bestTest = 0.03456358924
+bestIteration = 26
+
+Shrink model to first 27 iterations.
+17:14:10 Fit ablation: 35 features
+0:	learn: 0.4931357	test: 0.5130909	best: 0.5130909 (0)	total: 901ms	remaining: 5m 59s
+Stopped by overfitting detector  (60 iterations wait)
+
+bestTest = 0.03516392387
+bestIteration = 23
+
+Shrink model to first 24 iterations.
+17:16:37 Validation selection saved. Best model=1, NDCG@10=0.13885

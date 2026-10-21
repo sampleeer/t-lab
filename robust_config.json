@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "model_seeds": [42, 2026],
+  "test_cutoffs": ["2021-08-02", "2021-08-09", "2021-08-16"],
+  "train_weeks": 3,
+  "train_users": 3000,
+  "negatives_per_user": 30,
+  "depths": [5, 7],
+  "tree_checkpoints": [16, 32, 64, 128],
+  "learning_rate": 0.06,
+  "l2_leaf_reg": 5,
+  "prefix_depth": 6,
+  "prefix_trees": 64,
+  "selected_counts": [12, 24],
+  "correlation_limit": 0.97,
+  "threads": 4,
+  "bootstrap_repetitions": 2000
+}

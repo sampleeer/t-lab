@@ -1,0 +1,25 @@
+{
+  "same_full_user_histories_after_resource_change": true,
+  "same_config_prepare_fit_evaluate": true,
+  "validation_selection_matches_rule": true,
+  "same_test_candidates_all_models": true,
+  "unit_tests_passed": 4,
+  "real_recommendation_command_passed": true,
+  "source_sha256": {
+    "config.json": "9c20bf06197359665582fafd15470869cf1fcd2733245ddf7cc002e970628be0",
+    "requirements.txt": "29ef38b5c95969420ae2edaa3689cfe39055e8eb3eb14c22778493be6d453c95",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/diagnostics.py": "548d1bebb87f50068044c77c64b50a2c9e99341807b9655baa97fdd8e25cbc70",
+    "src/download.py": "3d950137e1e4e9e4b523ff74f8fe5fb8dcea8937fb03b304f01ea33a86a763a1",
+    "src/features.py": "5d371c21edddbc684ee94c2fe8ea594a94e050646892f3ba8b0a34d444141f08",
+    "src/metrics.py": "5ffe2856f941d09cccdb7c9b503e3b35c47504062f625b245346a3b34457db23",
+    "src/pipeline.py": "cf42350582e18d5ed4ae52fdf9e3f3c13f09b244c9c0f43e1ae40b71656c52aa",
+    "src/recommend.py": "100b0739ba316025c7dc7b61894319700d77a7529a09d3a76360a2dc6a03034a",
+    "tests/test_protocol.py": "e41c73e891ae131b844337a8894b6b0b22d7aeb7502cd9b4b7ae44143bcf3f1e"
+  },
+  "model_sha256": {
+    "model_1.cbm": "721e07ada1b108b14ac1682dab3ca0e6f40849a6aa19156eef91eb3b9a122415",
+    "model_0.cbm": "182eaf1d9215fff95104a6155d91d015064f5f975db5a3b5f6e426bcdb59ce07",
+    "ablation.cbm": "a1a781195117b8a32715817a43e5ebeeac21a8b71d830ec969217eea567b086b"
+  }
+}

@@ -1,0 +1,22 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+23:04:08 Screened 144 -> 75 distinct features on 165748 rows
+23:04:20 Fit auto_top12: 58 features, 27 trees
+0:	learn: 0.4902175	total: 1.33s	remaining: 34.6s
+25:	learn: 0.0064517	total: 33.4s	remaining: 1.28s
+26:	learn: 0.0063023	total: 34.9s	remaining: 0us
+23:05:17 Fit auto_top24: 70 features, 27 trees
+0:	learn: 0.4870148	total: 3.3s	remaining: 1m 25s
+25:	learn: 0.0064940	total: 50.3s	remaining: 1.93s
+26:	learn: 0.0063277	total: 51.7s	remaining: 0us
+23:06:35 Fit random_matched: 58 features, 27 trees
+0:	learn: 0.4912796	total: 2s	remaining: 52s
+25:	learn: 0.0064383	total: 41.7s	remaining: 1.6s
+26:	learn: 0.0062885	total: 43s	remaining: 0us
+23:07:38 Fit auto_replacement: 26 features, 27 trees
+0:	learn: 0.4958278	total: 1s	remaining: 26s
+25:	learn: 0.0068982	total: 31s	remaining: 1.19s
+26:	learn: 0.0067141	total: 32.1s	remaining: 0us
+23:08:14 Locked auto_top12: validation NDCG@10=0.133630

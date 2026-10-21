@@ -1,0 +1,148 @@
+15:42:49 Fold 0: validation 2021-07-26, test 2021-08-02 sealed
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+15:42:51 Fit manual_depth5: 46 columns, 128 trees, seed=42
+0:	learn: 0.5026137	total: 255ms	remaining: 32.4s
+64:	learn: 0.0051850	total: 6.66s	remaining: 6.46s
+127:	learn: 0.0050402	total: 13s	remaining: 0us
+15:43:09 Fit manual_depth7: 46 columns, 128 trees, seed=42
+0:	learn: 0.5026137	total: 60.7ms	remaining: 7.71s
+64:	learn: 0.0051309	total: 5.9s	remaining: 5.72s
+127:	learn: 0.0049705	total: 12.9s	remaining: 0us
+15:43:25 Fit prefix_1: 46 columns, 64 trees, seed=42
+0:	learn: 0.5004888	total: 33.7ms	remaining: 2.12s
+63:	learn: 0.0047877	total: 1.86s	remaining: 0us
+15:43:27 Fit prefix_2: 46 columns, 64 trees, seed=42
+0:	learn: 0.4928391	total: 60.8ms	remaining: 3.83s
+63:	learn: 0.0051505	total: 4.29s	remaining: 0us
+15:43:35 Fit auto_k12: 58 columns, 128 trees, seed=42
+0:	learn: 0.4947506	total: 122ms	remaining: 15.5s
+64:	learn: 0.0051214	total: 7.9s	remaining: 7.66s
+127:	learn: 0.0049622	total: 15.8s	remaining: 0us
+15:43:54 Fit auto_k24: 70 columns, 128 trees, seed=42
+0:	learn: 0.4961683	total: 235ms	remaining: 29.9s
+64:	learn: 0.0050841	total: 7.86s	remaining: 7.62s
+127:	learn: 0.0049228	total: 14.8s	remaining: 0us
+15:44:12 Fit random_seed42: 70 columns, 128 trees, seed=42
+0:	learn: 0.4916938	total: 111ms	remaining: 14.2s
+64:	learn: 0.0051228	total: 7.12s	remaining: 6.9s
+127:	learn: 0.0049484	total: 14.4s	remaining: 0us
+15:44:30 Fit replacement_seed42: 38 columns, 128 trees, seed=42
+0:	learn: 0.4939586	total: 96.3ms	remaining: 12.2s
+64:	learn: 0.0053167	total: 6.9s	remaining: 6.69s
+127:	learn: 0.0051585	total: 13.3s	remaining: 0us
+15:44:47 Fit manual_seed2026: 46 columns, 128 trees, seed=2026
+0:	learn: 0.5009070	total: 76.5ms	remaining: 9.72s
+64:	learn: 0.0051545	total: 8.56s	remaining: 8.3s
+127:	learn: 0.0049729	total: 15.6s	remaining: 0us
+15:45:07 Fit auto_seed2026: 70 columns, 128 trees, seed=2026
+0:	learn: 0.4929889	total: 139ms	remaining: 17.6s
+64:	learn: 0.0051090	total: 8.29s	remaining: 8.03s
+127:	learn: 0.0049500	total: 15.8s	remaining: 0us
+15:45:26 Fit random_seed2026: 70 columns, 128 trees, seed=2026
+0:	learn: 0.4945007	total: 124ms	remaining: 15.8s
+64:	learn: 0.0050986	total: 7.44s	remaining: 7.21s
+127:	learn: 0.0049169	total: 14.9s	remaining: 0us
+15:45:44 Fit replacement_seed2026: 38 columns, 128 trees, seed=2026
+0:	learn: 0.4995826	total: 71.7ms	remaining: 9.11s
+64:	learn: 0.0052771	total: 6.94s	remaining: 6.73s
+127:	learn: 0.0051215	total: 13.5s	remaining: 0us
+15:45:58 Locked fold 0: depth=7, trees=128, auto +24
+15:45:58 Fold 1: validation 2021-08-02, test 2021-08-09 sealed
+15:46:01 Fit manual_depth5: 46 columns, 128 trees, seed=42
+0:	learn: 0.4958721	total: 114ms	remaining: 14.4s
+64:	learn: 0.0052423	total: 5.92s	remaining: 5.74s
+127:	learn: 0.0051050	total: 12.2s	remaining: 0us
+15:46:17 Fit manual_depth7: 46 columns, 128 trees, seed=42
+0:	learn: 0.4958721	total: 82ms	remaining: 10.4s
+64:	learn: 0.0051895	total: 6.62s	remaining: 6.42s
+127:	learn: 0.0050480	total: 13s	remaining: 0us
+15:46:32 Fit prefix_1: 46 columns, 64 trees, seed=42
+0:	learn: 0.4983320	total: 33.4ms	remaining: 2.11s
+63:	learn: 0.0054045	total: 2.12s	remaining: 0us
+15:46:35 Fit prefix_2: 46 columns, 64 trees, seed=42
+0:	learn: 0.5005482	total: 55.3ms	remaining: 3.48s
+63:	learn: 0.0052919	total: 4.15s	remaining: 0us
+15:46:42 Fit auto_k12: 58 columns, 128 trees, seed=42
+0:	learn: 0.4972063	total: 87.5ms	remaining: 11.1s
+64:	learn: 0.0051981	total: 6.9s	remaining: 6.69s
+127:	learn: 0.0050310	total: 14.2s	remaining: 0us
+15:47:00 Fit auto_k24: 70 columns, 128 trees, seed=42
+0:	learn: 0.4936354	total: 138ms	remaining: 17.6s
+64:	learn: 0.0052362	total: 7.54s	remaining: 7.31s
+127:	learn: 0.0051148	total: 14.3s	remaining: 0us
+15:47:17 Fit random_seed42: 70 columns, 128 trees, seed=42
+0:	learn: 0.4878823	total: 118ms	remaining: 15s
+64:	learn: 0.0051766	total: 7.49s	remaining: 7.26s
+127:	learn: 0.0050430	total: 14.7s	remaining: 0us
+15:47:36 Fit replacement_seed42: 38 columns, 128 trees, seed=42
+0:	learn: 0.5002293	total: 138ms	remaining: 17.5s
+64:	learn: 0.0055038	total: 6.19s	remaining: 6s
+127:	learn: 0.0054148	total: 12s	remaining: 0us
+15:47:50 Fit manual_seed2026: 46 columns, 128 trees, seed=2026
+0:	learn: 0.4878612	total: 110ms	remaining: 14s
+64:	learn: 0.0051859	total: 7.06s	remaining: 6.84s
+127:	learn: 0.0050491	total: 14s	remaining: 0us
+15:48:08 Fit auto_seed2026: 70 columns, 128 trees, seed=2026
+0:	learn: 0.5025847	total: 62.4ms	remaining: 7.93s
+64:	learn: 0.0051766	total: 7.43s	remaining: 7.2s
+127:	learn: 0.0050823	total: 14.3s	remaining: 0us
+15:48:26 Fit random_seed2026: 70 columns, 128 trees, seed=2026
+0:	learn: 0.5025847	total: 60.9ms	remaining: 7.73s
+64:	learn: 0.0051467	total: 7.25s	remaining: 7.03s
+127:	learn: 0.0050519	total: 14.2s	remaining: 0us
+15:48:43 Fit replacement_seed2026: 38 columns, 128 trees, seed=2026
+0:	learn: 0.5000457	total: 79.7ms	remaining: 10.1s
+64:	learn: 0.0054959	total: 6.19s	remaining: 6s
+127:	learn: 0.0053840	total: 12.3s	remaining: 0us
+15:48:56 Locked fold 1: depth=7, trees=128, auto +24
+15:48:56 Fold 2: validation 2021-08-09, test 2021-08-16 sealed
+15:48:58 Fit manual_depth5: 46 columns, 128 trees, seed=42
+0:	learn: 0.4928797	total: 129ms	remaining: 16.3s
+64:	learn: 0.0053481	total: 5.75s	remaining: 5.57s
+127:	learn: 0.0052417	total: 11.2s	remaining: 0us
+15:49:14 Fit manual_depth7: 46 columns, 128 trees, seed=42
+0:	learn: 0.4923001	total: 110ms	remaining: 13.9s
+64:	learn: 0.0053304	total: 7.31s	remaining: 7.09s
+127:	learn: 0.0051760	total: 13.7s	remaining: 0us
+15:49:30 Fit prefix_1: 46 columns, 64 trees, seed=42
+0:	learn: 0.4978299	total: 33.2ms	remaining: 2.09s
+63:	learn: 0.0051603	total: 2.23s	remaining: 0us
+15:49:32 Fit prefix_2: 46 columns, 64 trees, seed=42
+0:	learn: 0.5015611	total: 47.4ms	remaining: 2.99s
+63:	learn: 0.0051336	total: 4.55s	remaining: 0us
+15:49:40 Fit auto_k12: 58 columns, 128 trees, seed=42
+0:	learn: 0.4977644	total: 103ms	remaining: 13.1s
+64:	learn: 0.0053516	total: 6.23s	remaining: 6.04s
+127:	learn: 0.0052365	total: 12.1s	remaining: 0us
+15:49:56 Fit auto_k24: 70 columns, 128 trees, seed=42
+0:	learn: 0.4963201	total: 82.3ms	remaining: 10.4s
+64:	learn: 0.0053339	total: 6.62s	remaining: 6.42s
+127:	learn: 0.0052262	total: 12.9s	remaining: 0us
+15:50:12 Fit random_seed42: 58 columns, 128 trees, seed=42
+0:	learn: 0.4966766	total: 102ms	remaining: 13s
+64:	learn: 0.0053483	total: 6.08s	remaining: 5.89s
+127:	learn: 0.0052358	total: 11.8s	remaining: 0us
+15:50:27 Fit replacement_seed42: 26 columns, 128 trees, seed=42
+0:	learn: 0.4990883	total: 154ms	remaining: 19.5s
+64:	learn: 0.0056690	total: 5.41s	remaining: 5.24s
+127:	learn: 0.0055919	total: 10.4s	remaining: 0us
+15:50:40 Fit manual_seed2026: 46 columns, 128 trees, seed=2026
+0:	learn: 0.5034564	total: 57.9ms	remaining: 7.35s
+64:	learn: 0.0053606	total: 5.83s	remaining: 5.65s
+127:	learn: 0.0052360	total: 11.6s	remaining: 0us
+15:50:55 Fit auto_seed2026: 58 columns, 128 trees, seed=2026
+0:	learn: 0.5034570	total: 73.9ms	remaining: 9.38s
+64:	learn: 0.0053532	total: 6.04s	remaining: 5.85s
+127:	learn: 0.0052265	total: 12s	remaining: 0us
+15:51:11 Fit random_seed2026: 58 columns, 128 trees, seed=2026
+0:	learn: 0.5034570	total: 69.6ms	remaining: 8.83s
+64:	learn: 0.0053527	total: 6.11s	remaining: 5.93s
+127:	learn: 0.0052277	total: 12.1s	remaining: 0us
+15:51:26 Fit replacement_seed2026: 26 columns, 128 trees, seed=2026
+0:	learn: 0.5035184	total: 63.6ms	remaining: 8.08s
+64:	learn: 0.0056596	total: 5.33s	remaining: 5.17s
+127:	learn: 0.0055817	total: 10.5s	remaining: 0us
+15:51:37 Locked fold 2: depth=5, trees=128, auto +12

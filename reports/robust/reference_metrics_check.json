@@ -1,0 +1,12 @@
+{
+  "pairs": 1128618,
+  "users": 5698,
+  "metrics": {
+    "ndcg@10": 0.14464193607537115,
+    "recall@10": 0.21011956811704377,
+    "candidate_recall": 0.5077062095921547,
+    "oracle_ndcg@10": 0.5552441239121407,
+    "users": 5698
+  },
+  "all_per_user_metrics_match_reference": true
+}

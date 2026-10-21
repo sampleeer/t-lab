@@ -1,0 +1,33 @@
+{
+  "unit_tests_passed": 8,
+  "candidate_hashes_match_baseline": true,
+  "baseline_model_unchanged": true,
+  "selection_matches_validation_rule": true,
+  "selection_saved_before_test_results": true,
+  "four_models_same_27_tree_budget": true,
+  "model_feature_names_match_saved_specs": true,
+  "local_report_links_valid": true,
+  "source_sha256": {
+    "config.json": "9c20bf06197359665582fafd15470869cf1fcd2733245ddf7cc002e970628be0",
+    "auto_config.json": "d490a0c02ec4674f3de4d1f3b29ec8c31116f079be2393363c628997ebddd716",
+    "requirements.txt": "29ef38b5c95969420ae2edaa3689cfe39055e8eb3eb14c22778493be6d453c95",
+    "src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src/auto_features.py": "31b5e2c50ee8fd1ec281dab9b0ec6f3637b28883c3f52c34a300640906adaee0",
+    "src/auto_pipeline.py": "e74fba935ec2cd605ed9e6b04cf3c3c5d0f0c0ad18867c667286ea1bee0738fb",
+    "src/diagnostics.py": "548d1bebb87f50068044c77c64b50a2c9e99341807b9655baa97fdd8e25cbc70",
+    "src/download.py": "3d950137e1e4e9e4b523ff74f8fe5fb8dcea8937fb03b304f01ea33a86a763a1",
+    "src/features.py": "5d371c21edddbc684ee94c2fe8ea594a94e050646892f3ba8b0a34d444141f08",
+    "src/final_report.py": "2cdc2b8146079be02a7fda61b159c299f1e58b1038510ebcb5d5c4ec72c33743",
+    "src/metrics.py": "5ffe2856f941d09cccdb7c9b503e3b35c47504062f625b245346a3b34457db23",
+    "src/pipeline.py": "cf42350582e18d5ed4ae52fdf9e3f3c13f09b244c9c0f43e1ae40b71656c52aa",
+    "src/recommend.py": "100b0739ba316025c7dc7b61894319700d77a7529a09d3a76360a2dc6a03034a",
+    "tests/test_auto_features.py": "04919ad59fba644ea8d29355d0a178e5741b80d6391a6cafcb143dc240656dfb",
+    "tests/test_protocol.py": "e41c73e891ae131b844337a8894b6b0b22d7aeb7502cd9b4b7ae44143bcf3f1e"
+  },
+  "research_model_sha256": {
+    "auto_top24.cbm": "22e3976ab11d694356231074951f2befad718552c55aeedecc4e0da715b18223",
+    "random_matched.cbm": "9e21ae9415d2c2114ff78283cb481aac20ff71da2503ce45567afecc0290dfd6",
+    "auto_top12.cbm": "b2ab893f6d053062930d9dec57a87c517004281ebe5d11011bbc454556959825",
+    "auto_replacement.cbm": "fb9b4d2f2c67245fd0ad7bfb0a33521febc8e30df433fe9db91ce7d92a5c865c"
+  }
+}
