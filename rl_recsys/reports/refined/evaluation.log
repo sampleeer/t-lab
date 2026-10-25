@@ -1,0 +1,50 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+EVAL test colab_sft NDCG 0.028984 reward 0.6935
+EVAL test continued_sft_h1_seed42 NDCG 0.028984 reward 0.6935
+EVAL test continued_sft_h5_seed42 NDCG 0.028984 reward 0.6935
+EVAL test fraction_weak_seed42 NDCG 0.028984 reward 0.6935
+EVAL test fraction_kl_seed42 NDCG 0.028723 reward 0.6945
+EVAL test fraction_conservative_seed42 NDCG 0.028916 reward 0.694
+EVAL test time_kl_seed42 NDCG 0.028467 reward 0.6908
+EVAL test balanced_h1_seed42 NDCG 0.028889 reward 0.6931
+EVAL test balanced_h5_seed42 NDCG 0.027944 reward 0.6929
+EVAL test continued_sft_h1_seed2026 NDCG 0.028984 reward 0.6935
+EVAL test continued_sft_h5_seed2026 NDCG 0.028984 reward 0.6935
+EVAL test fraction_weak_seed2026 NDCG 0.028984 reward 0.6935
+EVAL test fraction_kl_seed2026 NDCG 0.02882 reward 0.6947
+EVAL test fraction_conservative_seed2026 NDCG 0.028729 reward 0.6941
+EVAL test time_kl_seed2026 NDCG 0.026992 reward 0.6909
+EVAL test balanced_h1_seed2026 NDCG 0.028664 reward 0.6931
+EVAL test balanced_h5_seed2026 NDCG 0.02813 reward 0.6933
+EVAL test rerank_fraction_selected NDCG 0.029545 reward 0.701
+EVAL test rerank_fraction_fixed NDCG 0.029757 reward 0.697
+EVAL test rerank_time_selected NDCG 0.02871 reward 0.692
+EVAL test rerank_time_fixed NDCG 0.024979 reward 0.6903
+EVAL test rerank_balanced_selected NDCG 0.028739 reward 0.6953
+EVAL test rerank_balanced_fixed NDCG 0.028564 reward 0.6944
+EVAL extra colab_sft NDCG 0.023626 reward 0.7275
+EVAL extra continued_sft_h1_seed42 NDCG 0.023626 reward 0.7275
+EVAL extra continued_sft_h5_seed42 NDCG 0.023626 reward 0.7275
+EVAL extra fraction_weak_seed42 NDCG 0.023626 reward 0.7275
+EVAL extra fraction_kl_seed42 NDCG 0.024152 reward 0.7284
+EVAL extra fraction_conservative_seed42 NDCG 0.0238 reward 0.728
+EVAL extra time_kl_seed42 NDCG 0.022513 reward 0.7249
+EVAL extra balanced_h1_seed42 NDCG 0.023623 reward 0.7271
+EVAL extra balanced_h5_seed42 NDCG 0.023225 reward 0.727
+EVAL extra continued_sft_h1_seed2026 NDCG 0.023626 reward 0.7275
+EVAL extra continued_sft_h5_seed2026 NDCG 0.023626 reward 0.7275
+EVAL extra fraction_weak_seed2026 NDCG 0.023626 reward 0.7275
+EVAL extra fraction_kl_seed2026 NDCG 0.024154 reward 0.7286
+EVAL extra fraction_conservative_seed2026 NDCG 0.02407 reward 0.728
+EVAL extra time_kl_seed2026 NDCG 0.022331 reward 0.725
+EVAL extra balanced_h1_seed2026 NDCG 0.023781 reward 0.7271
+EVAL extra balanced_h5_seed2026 NDCG 0.023168 reward 0.7273
+EVAL extra rerank_fraction_selected NDCG 0.023682 reward 0.7344
+EVAL extra rerank_fraction_fixed NDCG 0.024336 reward 0.7307
+EVAL extra rerank_time_selected NDCG 0.022579 reward 0.7259
+EVAL extra rerank_time_fixed NDCG 0.01837 reward 0.7242
+EVAL extra rerank_balanced_selected NDCG 0.022511 reward 0.7289
+EVAL extra rerank_balanced_fixed NDCG 0.022921 reward 0.7282

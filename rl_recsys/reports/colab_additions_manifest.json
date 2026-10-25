@@ -1,0 +1,14 @@
+{
+  "source_archive_sha256": "0b6de023c369ce8647c9a9733b987b113c403bb4ba64a9d8f0b9492893364309",
+  "checkpoint_format_version": 2,
+  "best_weights": "best.pt",
+  "resume_checkpoint": "temp.pt",
+  "files": {
+    "COLAB.ipynb": "3cd9f9a7e2cbf6492fb8198e836d0f0dfb05187a308e3dd49272f5d5f6768a3c",
+    "COLAB.md": "8cf3250a126960ebe1399db82b2652bab832a073179198b3a3c81df2f3a19083",
+    "colab_runner.py": "79b3c47501e893672091c4a7dba980c23dd5d544426b1dce04d89c4a75942cb4",
+    "tests/test_colab_runner.py": "c13650d44058f73e52605f9d6d993b0165a8e1d29da104adaf4b076a0ea63f91",
+    "artifacts/validation.npz": "5398a789e086d02ea1abfce56a48ca7259c242a1b1ba63b64292053f80a88c50"
+  },
+  "notebook_revision": "drive-paths-and-original-validation-restoration-2026-10-24"
+}

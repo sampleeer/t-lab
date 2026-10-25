@@ -1,0 +1,71 @@
+[
+  {
+    "epoch": 0,
+    "joint_mse": 0.1323227882385254,
+    "fraction_rmse": 0.4380623400211334,
+    "fraction_mae": 0.40401166677474976,
+    "continuation_brier": 0.07274693995714188,
+    "continuation_auc": 0.558816839819217,
+    "events": 1370
+  },
+  {
+    "epoch": 1,
+    "train_mse": 0.09671977222442626,
+    "joint_mse": 0.10247975587844849,
+    "fraction_rmse": 0.3642827868461609,
+    "fraction_mae": 0.3175625205039978,
+    "continuation_brier": 0.07225756347179413,
+    "continuation_auc": 0.584485238011387,
+    "events": 1370
+  },
+  {
+    "epoch": 2,
+    "train_mse": 0.08326033382336298,
+    "joint_mse": 0.09828447550535202,
+    "fraction_rmse": 0.35309547185897827,
+    "fraction_mae": 0.2891348898410797,
+    "continuation_brier": 0.07189253717660904,
+    "continuation_auc": 0.5955383870399718,
+    "events": 1370
+  },
+  {
+    "epoch": 3,
+    "train_mse": 0.08059768011569977,
+    "joint_mse": 0.09671650826931,
+    "fraction_rmse": 0.3490794599056244,
+    "fraction_mae": 0.27769458293914795,
+    "continuation_brier": 0.07157652825117111,
+    "continuation_auc": 0.6030037565299055,
+    "events": 1370
+  },
+  {
+    "epoch": 4,
+    "train_mse": 0.07914645028511683,
+    "joint_mse": 0.09532759338617325,
+    "fraction_rmse": 0.3455742597579956,
+    "fraction_mae": 0.27256521582603455,
+    "continuation_brier": 0.07123361527919769,
+    "continuation_auc": 0.6082276809297412,
+    "events": 1370
+  },
+  {
+    "epoch": 5,
+    "train_mse": 0.07794896456797917,
+    "joint_mse": 0.09452827274799347,
+    "fraction_rmse": 0.34308284521102905,
+    "fraction_mae": 0.26849520206451416,
+    "continuation_brier": 0.07135071605443954,
+    "continuation_auc": 0.6117567646886188,
+    "events": 1370
+  },
+  {
+    "epoch": 6,
+    "train_mse": 0.07690731753826141,
+    "joint_mse": 0.09386918693780899,
+    "fraction_rmse": 0.341465026140213,
+    "fraction_mae": 0.26447615027427673,
+    "continuation_brier": 0.07114001363515854,
+    "continuation_auc": 0.6147209015671773,
+    "events": 1370
+  }
+]

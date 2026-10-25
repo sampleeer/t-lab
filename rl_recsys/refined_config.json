@@ -1,0 +1,75 @@
+{
+  "seed": 42,
+  "rl_seeds": [
+    42,
+    2026
+  ],
+  "threads": 4,
+  "source_bucket": 0,
+  "extra_bucket": 1,
+  "context_length": 24,
+  "rm_hidden_candidates": [
+    0,
+    32
+  ],
+  "rm_epochs": 6,
+  "rm_batch_size": 512,
+  "rm_lr": 0.001,
+  "rl_steps": 300,
+  "rl_batch_size": 64,
+  "rl_lr": 0.0001,
+  "eval_every": 100,
+  "gamma": 0.95,
+  "validation_ndcg_floor": 0.95,
+  "eval_batch_size": 128,
+  "rollout_validation_contexts": 128,
+  "rollout_validation_samples": 4,
+  "rollout_test_contexts": 512,
+  "bootstrap_repetitions": 2000,
+  "rerank_betas": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "variants": [
+    {
+      "name": "fraction_weak",
+      "reward": "fraction",
+      "beta": 0.01,
+      "horizon": 1
+    },
+    {
+      "name": "fraction_kl",
+      "reward": "fraction",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "name": "fraction_conservative",
+      "reward": "fraction",
+      "beta": 0.5,
+      "horizon": 1
+    },
+    {
+      "name": "time_kl",
+      "reward": "time",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "name": "balanced_h1",
+      "reward": "balanced",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "name": "balanced_h5",
+      "reward": "balanced",
+      "beta": 0.2,
+      "horizon": 5
+    }
+  ]
+}

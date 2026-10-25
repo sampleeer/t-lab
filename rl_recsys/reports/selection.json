@@ -1,0 +1,78 @@
+{
+  "42": [
+    {
+      "selected_step": 0,
+      "validation_ndcg_floor": 0.020757504069246435,
+      "selected_objective": 0.6581441164016724,
+      "name": "fraction_weak",
+      "reward": "fraction",
+      "beta": 0.01,
+      "horizon": 1
+    },
+    {
+      "selected_step": 300,
+      "validation_ndcg_floor": 0.020757504069246435,
+      "selected_objective": 0.6726245284080505,
+      "name": "fraction_kl",
+      "reward": "fraction",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "selected_step": 300,
+      "validation_ndcg_floor": 0.020757504069246435,
+      "selected_objective": 0.4422832727432251,
+      "name": "time_kl",
+      "reward": "time",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "selected_step": 100,
+      "validation_ndcg_floor": 0.020757504069246435,
+      "selected_objective": 0.6748778223991394,
+      "name": "balanced_5step",
+      "reward": "balanced",
+      "beta": 0.2,
+      "horizon": 5
+    }
+  ],
+  "2026": [
+    {
+      "selected_step": 0,
+      "validation_ndcg_floor": 0.020354179681601203,
+      "selected_objective": 0.6615860462188721,
+      "name": "fraction_weak",
+      "reward": "fraction",
+      "beta": 0.01,
+      "horizon": 1
+    },
+    {
+      "selected_step": 200,
+      "validation_ndcg_floor": 0.020354179681601203,
+      "selected_objective": 0.675852358341217,
+      "name": "fraction_kl",
+      "reward": "fraction",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "selected_step": 300,
+      "validation_ndcg_floor": 0.020354179681601203,
+      "selected_objective": 0.4459785521030426,
+      "name": "time_kl",
+      "reward": "time",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "selected_step": 300,
+      "validation_ndcg_floor": 0.020354179681601203,
+      "selected_objective": 0.6797215342521667,
+      "name": "balanced_5step",
+      "reward": "balanced",
+      "beta": 0.2,
+      "horizon": 5
+    }
+  ]
+}

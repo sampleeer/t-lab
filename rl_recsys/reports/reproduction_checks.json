@@ -1,0 +1,81 @@
+{
+  "config_hash": true,
+  "training_source_hashes": {
+    "data.py": true,
+    "models.py": true,
+    "experiment.py": true
+  },
+  "models": {
+    "42/sft": {
+      "passed": true,
+      "max_metric_difference": 2.842170943040401e-14,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "42/fraction_weak_selected": {
+      "passed": true,
+      "max_metric_difference": 2.842170943040401e-14,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "42/fraction_kl_selected": {
+      "passed": true,
+      "max_metric_difference": 9.974659986866641e-17,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "42/time_kl_selected": {
+      "passed": true,
+      "max_metric_difference": 2.842170943040401e-14,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "42/balanced_5step_selected": {
+      "passed": true,
+      "max_metric_difference": 2.842170943040401e-14,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "2026/sft": {
+      "passed": true,
+      "max_metric_difference": 9.367506770274758e-17,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "2026/fraction_weak_selected": {
+      "passed": true,
+      "max_metric_difference": 9.367506770274758e-17,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "2026/fraction_kl_selected": {
+      "passed": true,
+      "max_metric_difference": 9.974659986866641e-17,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "2026/time_kl_selected": {
+      "passed": true,
+      "max_metric_difference": 2.842170943040401e-14,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    },
+    "2026/balanced_5step_selected": {
+      "passed": true,
+      "max_metric_difference": 1.1102230246251565e-16,
+      "max_user_metric_difference": 9.71445146547012e-17,
+      "top10_identical": true,
+      "validation_selection_matches": true
+    }
+  },
+  "passed": true
+}

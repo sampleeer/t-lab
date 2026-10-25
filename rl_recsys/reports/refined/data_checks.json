@@ -1,0 +1,46 @@
+{
+  "train": {
+    "events": 600000,
+    "history_exact_match": true,
+    "only_strict_past": true,
+    "sha256": "e5a4cbc38d8c722a7051545efc0cb646d5e9e842ffccbbf454c4d977198ffe17"
+  },
+  "validation": {
+    "events": 4000,
+    "history_exact_match": true,
+    "only_strict_past": true,
+    "sha256": "85b6a97c5a40e48ac0abdbe1fa3a52bffb5fdb0685a46eb61169a13adfe20454"
+  },
+  "test": {
+    "events": 4000,
+    "history_exact_match": true,
+    "only_strict_past": true,
+    "sha256": "96840a7fd03908f89cf97f298c7e84293b40f333a5564ff1a9e72bcfb04a24c4"
+  },
+  "event_catalog_coverage_hypothetical": [
+    {
+      "catalog_items": 4096,
+      "train": 0.37207358392234363,
+      "validation": 0.3339200394837382,
+      "test": 0.30084884343224116
+    },
+    {
+      "catalog_items": 8192,
+      "train": 0.5027131427348173,
+      "validation": 0.4426415453364294,
+      "test": 0.4035053814592377
+    },
+    {
+      "catalog_items": 16384,
+      "train": 0.6475545718541624,
+      "validation": 0.5586398922522083,
+      "test": 0.5150547065469465
+    },
+    {
+      "catalog_items": 32768,
+      "train": 0.788253815347016,
+      "validation": 0.677049482519229,
+      "test": 0.6257745138847595
+    }
+  ]
+}

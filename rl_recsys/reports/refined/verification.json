@@ -1,0 +1,201 @@
+{
+  "sources": {
+    "refined_data.py": true,
+    "refined_models.py": true,
+    "refined_experiment.py": true,
+    "refined_config.json": true,
+    "reports/refined/PROTOCOL.md": true
+  },
+  "weights": {
+    "artifacts/colab_received/2026-10-24_seed42/best.pt": true,
+    "artifacts/refined/continued_sft_h1_seed42/best.pt": true,
+    "artifacts/refined/continued_sft_h5_seed42/best.pt": true,
+    "artifacts/refined/fraction_weak_seed42/best.pt": true,
+    "artifacts/refined/fraction_kl_seed42/best.pt": true,
+    "artifacts/refined/fraction_conservative_seed42/best.pt": true,
+    "artifacts/refined/time_kl_seed42/best.pt": true,
+    "artifacts/refined/balanced_h1_seed42/best.pt": true,
+    "artifacts/refined/balanced_h5_seed42/best.pt": true,
+    "artifacts/refined/continued_sft_h1_seed2026/best.pt": true,
+    "artifacts/refined/continued_sft_h5_seed2026/best.pt": true,
+    "artifacts/refined/fraction_weak_seed2026/best.pt": true,
+    "artifacts/refined/fraction_kl_seed2026/best.pt": true,
+    "artifacts/refined/fraction_conservative_seed2026/best.pt": true,
+    "artifacts/refined/time_kl_seed2026/best.pt": true,
+    "artifacts/refined/balanced_h1_seed2026/best.pt": true,
+    "artifacts/refined/balanced_h5_seed2026/best.pt": true
+  },
+  "choices": {
+    "continued_sft_h1_seed42": true,
+    "continued_sft_h5_seed42": true,
+    "fraction_weak_seed42": true,
+    "fraction_kl_seed42": true,
+    "fraction_conservative_seed42": true,
+    "time_kl_seed42": true,
+    "balanced_h1_seed42": true,
+    "balanced_h5_seed42": true,
+    "continued_sft_h1_seed2026": true,
+    "continued_sft_h5_seed2026": true,
+    "fraction_weak_seed2026": true,
+    "fraction_kl_seed2026": true,
+    "fraction_conservative_seed2026": true,
+    "time_kl_seed2026": true,
+    "balanced_h1_seed2026": true,
+    "balanced_h5_seed2026": true,
+    "rerank_fraction_selected": true,
+    "rerank_time_selected": true,
+    "rerank_balanced_selected": true
+  },
+  "metrics": {
+    "colab_sft": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "continued_sft_h1_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "continued_sft_h5_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "fraction_weak_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "fraction_kl_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "fraction_conservative_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "time_kl_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "balanced_h1_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "balanced_h5_seed42": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "continued_sft_h1_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "continued_sft_h5_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "fraction_weak_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "fraction_kl_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "fraction_conservative_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "time_kl_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "balanced_h1_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "balanced_h5_seed2026": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "rerank_fraction_selected": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "rerank_fraction_fixed": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "rerank_time_selected": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "rerank_time_fixed": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "rerank_balanced_selected": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    },
+    "rerank_balanced_fixed": {
+      "max_difference": 0.0,
+      "top10_identical": true,
+      "max_user_difference": 9.71445146547012e-17,
+      "passed": true
+    }
+  },
+  "original_colab_unchanged": true,
+  "prepared_inputs": {
+    "train": true,
+    "validation": true,
+    "test": true,
+    "extra": true
+  },
+  "train_before_cut": true,
+  "source_parquet": true,
+  "no_extra_train_user_overlap": true,
+  "selection_locked_before_extra": true,
+  "passed": true
+}

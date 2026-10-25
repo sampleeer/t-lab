@@ -1,0 +1,65 @@
+[
+  {
+    "epoch": 0,
+    "joint_mse": 0.1323227882385254,
+    "fraction_rmse": 0.4380623400211334,
+    "fraction_mae": 0.40401166677474976,
+    "continuation_brier": 0.07274693995714188,
+    "continuation_auc": 0.558816839819217,
+    "events": 1370
+  },
+  {
+    "epoch": 1,
+    "joint_mse": 0.09291014075279236,
+    "fraction_rmse": 0.33723217248916626,
+    "fraction_mae": 0.2428203970193863,
+    "continuation_brier": 0.07209474593400955,
+    "continuation_auc": 0.5906262839701826,
+    "events": 1370
+  },
+  {
+    "epoch": 2,
+    "joint_mse": 0.08929422497749329,
+    "fraction_rmse": 0.3272710144519806,
+    "fraction_mae": 0.19768257439136505,
+    "continuation_brier": 0.07148212939500809,
+    "continuation_auc": 0.6090897751951634,
+    "events": 1370
+  },
+  {
+    "epoch": 3,
+    "joint_mse": 0.08893047273159027,
+    "fraction_rmse": 0.32651567459106445,
+    "fraction_mae": 0.1872911900281906,
+    "continuation_brier": 0.07124845683574677,
+    "continuation_auc": 0.6140605740447261,
+    "events": 1370
+  },
+  {
+    "epoch": 4,
+    "joint_mse": 0.08887461572885513,
+    "fraction_rmse": 0.3265291452407837,
+    "fraction_mae": 0.18514877557754517,
+    "continuation_brier": 0.07112795114517212,
+    "continuation_auc": 0.6189983565181663,
+    "events": 1370
+  },
+  {
+    "epoch": 5,
+    "joint_mse": 0.08848138153553009,
+    "fraction_rmse": 0.3257608413696289,
+    "fraction_mae": 0.18253132700920105,
+    "continuation_brier": 0.07084263861179352,
+    "continuation_auc": 0.622299994130422,
+    "events": 1370
+  },
+  {
+    "epoch": 6,
+    "joint_mse": 0.08822211623191833,
+    "fraction_rmse": 0.32524943351745605,
+    "fraction_mae": 0.18266549706459045,
+    "continuation_brier": 0.07065701484680176,
+    "continuation_auc": 0.6255429359629042,
+    "events": 1370
+  }
+]

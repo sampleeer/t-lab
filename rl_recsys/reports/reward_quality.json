@@ -1,0 +1,302 @@
+{
+  "42": {
+    "optimizer": {
+      "reward_model": {
+        "fraction_rmse": 0.4367193281650543,
+        "fraction_mae": 0.40253233909606934,
+        "continuation_brier": 0.061043865978717804,
+        "continuation_auc": 0.5834578601315004,
+        "n": 1279
+      },
+      "shuffled_history": {
+        "fraction_rmse": 0.436407208442688,
+        "fraction_mae": 0.4021848440170288,
+        "continuation_brier": 0.06098860502243042,
+        "continuation_auc": 0.5935295875672445,
+        "n": 1279
+      },
+      "item_mean": {
+        "fraction_rmse": 0.43639370799064636,
+        "fraction_mae": 0.4027961492538452,
+        "continuation_brier": 0.06101831793785095,
+        "continuation_auc": 0.5804343494720063,
+        "n": 1279
+      },
+      "train_mean": {
+        "fraction_rmse": 0.4420574186377292,
+        "fraction_mae": 0.4137847079249901,
+        "continuation_brier": 0.06149108942465479,
+        "continuation_auc": 0.5,
+        "n": 1279
+      },
+      "fraction_calibration": [
+        {
+          "lower": 0.30000000000000004,
+          "n": 6,
+          "predicted": 0.3880563974380493,
+          "observed": 0.2733333110809326
+        },
+        {
+          "lower": 0.4,
+          "n": 55,
+          "predicted": 0.46962979435920715,
+          "observed": 0.532909095287323
+        },
+        {
+          "lower": 0.5,
+          "n": 250,
+          "predicted": 0.5624077916145325,
+          "observed": 0.5356799960136414
+        },
+        {
+          "lower": 0.6000000000000001,
+          "n": 597,
+          "predicted": 0.6531565189361572,
+          "observed": 0.6441540718078613
+        },
+        {
+          "lower": 0.7000000000000001,
+          "n": 306,
+          "predicted": 0.7351978421211243,
+          "observed": 0.6701633930206299
+        },
+        {
+          "lower": 0.8,
+          "n": 50,
+          "predicted": 0.8347561359405518,
+          "observed": 0.8180000185966492
+        },
+        {
+          "lower": 0.9,
+          "n": 15,
+          "predicted": 0.9337766170501709,
+          "observed": 0.8373333215713501
+        }
+      ]
+    },
+    "auditor": {
+      "reward_model": {
+        "fraction_rmse": 0.43692252039909363,
+        "fraction_mae": 0.40271493792533875,
+        "continuation_brier": 0.06118488684296608,
+        "continuation_auc": 0.5631749352460649,
+        "n": 1279
+      },
+      "shuffled_history": {
+        "fraction_rmse": 0.43713265657424927,
+        "fraction_mae": 0.40296822786331177,
+        "continuation_brier": 0.061131518334150314,
+        "continuation_auc": 0.5660091651723451,
+        "n": 1279
+      },
+      "item_mean": {
+        "fraction_rmse": 0.43639370799064636,
+        "fraction_mae": 0.4027961492538452,
+        "continuation_brier": 0.06101831793785095,
+        "continuation_auc": 0.5804343494720063,
+        "n": 1279
+      },
+      "train_mean": {
+        "fraction_rmse": 0.4420574186377292,
+        "fraction_mae": 0.4137847079249901,
+        "continuation_brier": 0.06149108942465479,
+        "continuation_auc": 0.5,
+        "n": 1279
+      },
+      "fraction_calibration": [
+        {
+          "lower": 0.30000000000000004,
+          "n": 1,
+          "predicted": 0.38024652004241943,
+          "observed": 0.25999999046325684
+        },
+        {
+          "lower": 0.4,
+          "n": 57,
+          "predicted": 0.4671984910964966,
+          "observed": 0.4826316237449646
+        },
+        {
+          "lower": 0.5,
+          "n": 238,
+          "predicted": 0.5609715580940247,
+          "observed": 0.5598739385604858
+        },
+        {
+          "lower": 0.6000000000000001,
+          "n": 610,
+          "predicted": 0.6530618667602539,
+          "observed": 0.62250816822052
+        },
+        {
+          "lower": 0.7000000000000001,
+          "n": 309,
+          "predicted": 0.7366668581962585,
+          "observed": 0.6947572827339172
+        },
+        {
+          "lower": 0.8,
+          "n": 49,
+          "predicted": 0.8307617902755737,
+          "observed": 0.8157142996788025
+        },
+        {
+          "lower": 0.9,
+          "n": 15,
+          "predicted": 0.9280722737312317,
+          "observed": 0.8373333215713501
+        }
+      ]
+    }
+  },
+  "2026": {
+    "optimizer": {
+      "reward_model": {
+        "fraction_rmse": 0.43675386905670166,
+        "fraction_mae": 0.40225595235824585,
+        "continuation_brier": 0.061078738421201706,
+        "continuation_auc": 0.5855997210599722,
+        "n": 1279
+      },
+      "shuffled_history": {
+        "fraction_rmse": 0.437904417514801,
+        "fraction_mae": 0.40352627635002136,
+        "continuation_brier": 0.06111413985490799,
+        "continuation_auc": 0.5827156804144251,
+        "n": 1279
+      },
+      "item_mean": {
+        "fraction_rmse": 0.43639370799064636,
+        "fraction_mae": 0.4027961492538452,
+        "continuation_brier": 0.06101831793785095,
+        "continuation_auc": 0.5804343494720063,
+        "n": 1279
+      },
+      "train_mean": {
+        "fraction_rmse": 0.4420574186377292,
+        "fraction_mae": 0.4137847079249901,
+        "continuation_brier": 0.06149108942465479,
+        "continuation_auc": 0.5,
+        "n": 1279
+      },
+      "fraction_calibration": [
+        {
+          "lower": 0.30000000000000004,
+          "n": 6,
+          "predicted": 0.38413873314857483,
+          "observed": 0.25
+        },
+        {
+          "lower": 0.4,
+          "n": 47,
+          "predicted": 0.46339181065559387,
+          "observed": 0.5510638356208801
+        },
+        {
+          "lower": 0.5,
+          "n": 242,
+          "predicted": 0.5620471835136414,
+          "observed": 0.5320661067962646
+        },
+        {
+          "lower": 0.6000000000000001,
+          "n": 618,
+          "predicted": 0.6539751887321472,
+          "observed": 0.6362297534942627
+        },
+        {
+          "lower": 0.7000000000000001,
+          "n": 300,
+          "predicted": 0.7365459203720093,
+          "observed": 0.6850000023841858
+        },
+        {
+          "lower": 0.8,
+          "n": 51,
+          "predicted": 0.8323460221290588,
+          "observed": 0.7950981259346008
+        },
+        {
+          "lower": 0.9,
+          "n": 15,
+          "predicted": 0.9337719678878784,
+          "observed": 0.8373333215713501
+        }
+      ]
+    },
+    "auditor": {
+      "reward_model": {
+        "fraction_rmse": 0.43679898977279663,
+        "fraction_mae": 0.40240341424942017,
+        "continuation_brier": 0.06116059049963951,
+        "continuation_auc": 0.5631201434548715,
+        "n": 1279
+      },
+      "shuffled_history": {
+        "fraction_rmse": 0.4371550977230072,
+        "fraction_mae": 0.403032511472702,
+        "continuation_brier": 0.061128318309783936,
+        "continuation_auc": 0.5728332337118949,
+        "n": 1279
+      },
+      "item_mean": {
+        "fraction_rmse": 0.43639370799064636,
+        "fraction_mae": 0.4027961492538452,
+        "continuation_brier": 0.06101831793785095,
+        "continuation_auc": 0.5804343494720063,
+        "n": 1279
+      },
+      "train_mean": {
+        "fraction_rmse": 0.4420574186377292,
+        "fraction_mae": 0.4137847079249901,
+        "continuation_brier": 0.06149108942465479,
+        "continuation_auc": 0.5,
+        "n": 1279
+      },
+      "fraction_calibration": [
+        {
+          "lower": 0.30000000000000004,
+          "n": 4,
+          "predicted": 0.3870902955532074,
+          "observed": 0.39499998092651367
+        },
+        {
+          "lower": 0.4,
+          "n": 49,
+          "predicted": 0.46533721685409546,
+          "observed": 0.483877569437027
+        },
+        {
+          "lower": 0.5,
+          "n": 253,
+          "predicted": 0.5610256791114807,
+          "observed": 0.5381422638893127
+        },
+        {
+          "lower": 0.6000000000000001,
+          "n": 611,
+          "predicted": 0.6554587483406067,
+          "observed": 0.6405074000358582
+        },
+        {
+          "lower": 0.7000000000000001,
+          "n": 300,
+          "predicted": 0.7370325922966003,
+          "observed": 0.685166597366333
+        },
+        {
+          "lower": 0.8,
+          "n": 47,
+          "predicted": 0.8315139412879944,
+          "observed": 0.7885106801986694
+        },
+        {
+          "lower": 0.9,
+          "n": 15,
+          "predicted": 0.9261351823806763,
+          "observed": 0.8373333215713501
+        }
+      ]
+    }
+  }
+}

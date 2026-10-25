@@ -1,0 +1,110 @@
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+{
+  "raw_rows": 46467212,
+  "selected_rows": 4484526,
+  "selected_users": 916,
+  "timestamp_unit_seconds": 1,
+  "timestamp_precision_seconds": 5,
+  "continuation_seconds": 1800,
+  "time_min": 40,
+  "train_end_exclusive": 19934415,
+  "validation_end_exclusive": 23086205,
+  "time_end_exclusive": 25999996,
+  "catalog_items": 4096,
+  "train_catalog_event_coverage": 0.37207358392234363,
+  "played_ratio_gt100": 21833,
+  "splits": {
+    "train": {
+      "eligible_rows": 1166609,
+      "examples": 160000,
+      "users": 777,
+      "target_catalog_coverage": 1.0,
+      "fraction_mean": 0.6575969374999999,
+      "continuation_mean": 0.94669375
+    },
+    "validation": {
+      "eligible_rows": 672163,
+      "examples": 4000,
+      "users": 822,
+      "target_catalog_coverage": 0.3425,
+      "fraction_mean": 0.6301475,
+      "continuation_mean": 0.92475
+    },
+    "test": {
+      "eligible_rows": 672340,
+      "examples": 4000,
+      "users": 906,
+      "target_catalog_coverage": 0.31975,
+      "fraction_mean": 0.6254675,
+      "continuation_mean": 0.92325
+    }
+  },
+  "config": {
+    "data_seed": 42,
+    "seeds": [
+      42,
+      2026
+    ],
+    "user_modulus": 10,
+    "user_remainder": 0,
+    "vocab_items": 4096,
+    "context_length": 24,
+    "train_quantile": 0.7,
+    "validation_quantile": 0.85,
+    "train_examples": 80000,
+    "reward_examples": 160000,
+    "eval_examples": 4000,
+    "batch_size": 128,
+    "hidden_size": 64,
+    "layers": 2,
+    "heads": 4,
+    "sft_epochs": 5,
+    "sft_lr": 0.001,
+    "reward_epochs": 8,
+    "reward_lr": 0.003,
+    "rl_steps": 300,
+    "rl_batch_size": 64,
+    "rl_lr": 0.0001,
+    "rl_eval_every": 100,
+    "bootstrap_repetitions": 2000,
+    "threads": 4,
+    "variants": [
+      {
+        "name": "fraction_weak",
+        "reward": "fraction",
+        "beta": 0.01,
+        "horizon": 1
+      },
+      {
+        "name": "fraction_kl",
+        "reward": "fraction",
+        "beta": 0.2,
+        "horizon": 1
+      },
+      {
+        "name": "time_kl",
+        "reward": "time",
+        "beta": 0.2,
+        "horizon": 1
+      },
+      {
+        "name": "balanced_5step",
+        "reward": "balanced",
+        "beta": 0.2,
+        "horizon": 5
+      }
+    ],
+    "continuation_seconds": 1800
+  },
+  "source": {
+    "dataset": "yandex/yambda",
+    "revision": "dd6f3a19eef5866e346c3270e098baa641a44948",
+    "file": "flat/50m/listens.parquet",
+    "url": "https://huggingface.co/datasets/yandex/yambda/resolve/dd6f3a19eef5866e346c3270e098baa641a44948/flat/50m/listens.parquet",
+    "sha256": "eed9cbd094af1e189507d2f8132a0dc9653b90e65480125c7cdccd601e0592d1",
+    "bytes": 369110332
+  }
+}

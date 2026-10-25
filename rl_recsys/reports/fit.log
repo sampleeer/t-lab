@@ -1,0 +1,66 @@
+SFT 42 {'epoch': 1, 'train_ce': 7.9507996963500975, 'validation_ndcg10': 0.007088460899118986}
+SFT 42 {'epoch': 2, 'train_ce': 7.301775784301758, 'validation_ndcg10': 0.01452066621435094}
+SFT 42 {'epoch': 3, 'train_ce': 6.895340296936035, 'validation_ndcg10': 0.01677727901621972}
+SFT 42 {'epoch': 4, 'train_ce': 6.599674864959717, 'validation_ndcg10': 0.01950066354610073}
+SFT 42 {'epoch': 5, 'train_ce': 6.345923902893066, 'validation_ndcg10': 0.021850004283417306}
+reward 142 {'epoch': 1, 'train_joint_mse': 0.11626059648990632, 'validation_joint_mse': 0.13256287574768066}
+reward 142 {'epoch': 2, 'train_joint_mse': 0.11126791659593582, 'validation_joint_mse': 0.13686703145503998}
+reward 142 {'epoch': 3, 'train_joint_mse': 0.0945150558590889, 'validation_joint_mse': 0.14609088003635406}
+reward 142 {'epoch': 4, 'train_joint_mse': 0.07703012244701385, 'validation_joint_mse': 0.1546657383441925}
+reward 142 {'epoch': 5, 'train_joint_mse': 0.06439079418182372, 'validation_joint_mse': 0.1609186977148056}
+reward 142 {'epoch': 6, 'train_joint_mse': 0.05577211141586304, 'validation_joint_mse': 0.16598089039325714}
+reward 142 {'epoch': 7, 'train_joint_mse': 0.04901360191106796, 'validation_joint_mse': 0.1701054871082306}
+reward 142 {'epoch': 8, 'train_joint_mse': 0.043181172055006024, 'validation_joint_mse': 0.17465560138225555}
+auditor 242 {'epoch': 1, 'train_joint_mse': 0.11580668205022812, 'validation_joint_mse': 0.13227151334285736}
+auditor 242 {'epoch': 2, 'train_joint_mse': 0.11079479146003723, 'validation_joint_mse': 0.13528496026992798}
+auditor 242 {'epoch': 3, 'train_joint_mse': 0.09403682950735093, 'validation_joint_mse': 0.1419617384672165}
+auditor 242 {'epoch': 4, 'train_joint_mse': 0.07655655410289765, 'validation_joint_mse': 0.15012286603450775}
+auditor 242 {'epoch': 5, 'train_joint_mse': 0.06417759119272232, 'validation_joint_mse': 0.15595217049121857}
+auditor 242 {'epoch': 6, 'train_joint_mse': 0.05585510672330856, 'validation_joint_mse': 0.15982089936733246}
+auditor 242 {'epoch': 7, 'train_joint_mse': 0.04960230869054794, 'validation_joint_mse': 0.16312189400196075}
+auditor 242 {'epoch': 8, 'train_joint_mse': 0.044096592473983766, 'validation_joint_mse': 0.1661345362663269}
+RL 42 fraction_weak 100 {'ndcg10': 0.01912345465114073, 'objective': 0.7040132284164429, 'pred_fraction': 0.7040132284164429, 'kl': 0.5135334134101868} eligible False
+RL 42 fraction_weak 200 {'ndcg10': 0.00455508600065357, 'objective': 0.8095122575759888, 'pred_fraction': 0.8095122575759888, 'kl': 3.8707895278930664} eligible False
+RL 42 fraction_weak 300 {'ndcg10': 0.0016251375472441142, 'objective': 0.9706852436065674, 'pred_fraction': 0.9706852436065674, 'kl': 13.528510093688965} eligible False
+RL 42 fraction_kl 100 {'ndcg10': 0.021249429436861086, 'objective': 0.6692589521408081, 'pred_fraction': 0.6692589521408081, 'kl': 0.027664655819535255} eligible True
+RL 42 fraction_kl 200 {'ndcg10': 0.021804268074396338, 'objective': 0.6710201501846313, 'pred_fraction': 0.6710201501846313, 'kl': 0.030586950480937958} eligible True
+RL 42 fraction_kl 300 {'ndcg10': 0.021650027852986576, 'objective': 0.6726245284080505, 'pred_fraction': 0.6726245284080505, 'kl': 0.03462395817041397} eligible True
+RL 42 time_kl 100 {'ndcg10': 0.02123546477802544, 'objective': 0.43622487783432007, 'pred_fraction': 0.6602989435195923, 'kl': 0.023551711812615395} eligible True
+RL 42 time_kl 200 {'ndcg10': 0.02136039463465398, 'objective': 0.4406365156173706, 'pred_fraction': 0.6611213684082031, 'kl': 0.03470629081130028} eligible True
+RL 42 time_kl 300 {'ndcg10': 0.02151600176250989, 'objective': 0.4422832727432251, 'pred_fraction': 0.6612042188644409, 'kl': 0.03555956482887268} eligible True
+RL 42 balanced_5step 100 {'ndcg10': 0.021520685681035646, 'objective': 0.6748778223991394, 'pred_fraction': 0.661449670791626, 'kl': 0.013678407296538353} eligible True
+RL 42 balanced_5step 200 {'ndcg10': 0.020563935034266366, 'objective': 0.6757911443710327, 'pred_fraction': 0.6630411744117737, 'kl': 0.021087439730763435} eligible False
+RL 42 balanced_5step 300 {'ndcg10': 0.020549427945614436, 'objective': 0.6765217781066895, 'pred_fraction': 0.6642892360687256, 'kl': 0.025824354961514473} eligible False
+SFT 2026 {'epoch': 1, 'train_ce': 7.879533547973633, 'validation_ndcg10': 0.008262524004227088}
+SFT 2026 {'epoch': 2, 'train_ce': 7.152826670074463, 'validation_ndcg10': 0.01619926398842298}
+SFT 2026 {'epoch': 3, 'train_ce': 6.729670822143555, 'validation_ndcg10': 0.018449212163309584}
+SFT 2026 {'epoch': 4, 'train_ce': 6.438778713989258, 'validation_ndcg10': 0.021332040340968264}
+SFT 2026 {'epoch': 5, 'train_ce': 6.198097108459472, 'validation_ndcg10': 0.021425452296422322}
+reward 2126 {'epoch': 1, 'train_joint_mse': 0.11624966312646866, 'validation_joint_mse': 0.13278919458389282}
+reward 2126 {'epoch': 2, 'train_joint_mse': 0.1113156503200531, 'validation_joint_mse': 0.1347036063671112}
+reward 2126 {'epoch': 3, 'train_joint_mse': 0.0956638619184494, 'validation_joint_mse': 0.14187276363372803}
+reward 2126 {'epoch': 4, 'train_joint_mse': 0.07914992016553879, 'validation_joint_mse': 0.1499183028936386}
+reward 2126 {'epoch': 5, 'train_joint_mse': 0.06680700483322144, 'validation_joint_mse': 0.15698516368865967}
+reward 2126 {'epoch': 6, 'train_joint_mse': 0.058445964741706845, 'validation_joint_mse': 0.16189223527908325}
+reward 2126 {'epoch': 7, 'train_joint_mse': 0.0521923422396183, 'validation_joint_mse': 0.16617105901241302}
+reward 2126 {'epoch': 8, 'train_joint_mse': 0.04684686641693115, 'validation_joint_mse': 0.16905911266803741}
+auditor 2226 {'epoch': 1, 'train_joint_mse': 0.11578559970855713, 'validation_joint_mse': 0.13280607759952545}
+auditor 2226 {'epoch': 2, 'train_joint_mse': 0.11047350060939788, 'validation_joint_mse': 0.13735805451869965}
+auditor 2226 {'epoch': 3, 'train_joint_mse': 0.09412683691978455, 'validation_joint_mse': 0.14895910024642944}
+auditor 2226 {'epoch': 4, 'train_joint_mse': 0.07770851650238036, 'validation_joint_mse': 0.1576504409313202}
+auditor 2226 {'epoch': 5, 'train_joint_mse': 0.06551163321733475, 'validation_joint_mse': 0.1636953353881836}
+auditor 2226 {'epoch': 6, 'train_joint_mse': 0.05701828681230545, 'validation_joint_mse': 0.17124971747398376}
+auditor 2226 {'epoch': 7, 'train_joint_mse': 0.05051624737977982, 'validation_joint_mse': 0.1754516214132309}
+auditor 2226 {'epoch': 8, 'train_joint_mse': 0.04495951530337334, 'validation_joint_mse': 0.18028420209884644}
+RL 2026 fraction_weak 100 {'ndcg10': 0.01721385504063779, 'objective': 0.7063978314399719, 'pred_fraction': 0.7063978314399719, 'kl': 0.49153533577919006} eligible False
+RL 2026 fraction_weak 200 {'ndcg10': 0.0029557992351792075, 'objective': 0.8057655692100525, 'pred_fraction': 0.8057655692100525, 'kl': 3.712279796600342} eligible False
+RL 2026 fraction_weak 300 {'ndcg10': 0.0012437706557700834, 'objective': 0.9075758457183838, 'pred_fraction': 0.9075758457183838, 'kl': 10.172473907470703} eligible False
+RL 2026 fraction_kl 100 {'ndcg10': 0.020907398231889838, 'objective': 0.6728167533874512, 'pred_fraction': 0.6728167533874512, 'kl': 0.02828354761004448} eligible True
+RL 2026 fraction_kl 200 {'ndcg10': 0.02123264388569725, 'objective': 0.675852358341217, 'pred_fraction': 0.675852358341217, 'kl': 0.03841281682252884} eligible True
+RL 2026 fraction_kl 300 {'ndcg10': 0.020779914164125245, 'objective': 0.6757655739784241, 'pred_fraction': 0.6757655739784241, 'kl': 0.0327862873673439} eligible True
+RL 2026 time_kl 100 {'ndcg10': 0.02141691553895753, 'objective': 0.43785643577575684, 'pred_fraction': 0.6630013585090637, 'kl': 0.01904527097940445} eligible True
+RL 2026 time_kl 200 {'ndcg10': 0.02126155472706991, 'objective': 0.4416987895965576, 'pred_fraction': 0.6630427241325378, 'kl': 0.02789692021906376} eligible True
+RL 2026 time_kl 300 {'ndcg10': 0.02042766797283526, 'objective': 0.4459785521030426, 'pred_fraction': 0.6638036370277405, 'kl': 0.04029639810323715} eligible True
+RL 2026 balanced_5step 100 {'ndcg10': 0.020614060455066988, 'objective': 0.6770794987678528, 'pred_fraction': 0.6652488708496094, 'kl': 0.015953388065099716} eligible True
+RL 2026 balanced_5step 200 {'ndcg10': 0.02082688389331544, 'objective': 0.6778177618980408, 'pred_fraction': 0.666456401348114, 'kl': 0.021615074947476387} eligible True
+RL 2026 balanced_5step 300 {'ndcg10': 0.020701987068665467, 'objective': 0.6797215342521667, 'pred_fraction': 0.6686393022537231, 'kl': 0.038489073514938354} eligible True

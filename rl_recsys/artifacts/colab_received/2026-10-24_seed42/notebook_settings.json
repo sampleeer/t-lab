@@ -1,0 +1,16 @@
+{
+  "source": "Assignments in received executed notebook; not embedded checkpoint metadata",
+  "settings": {
+    "RUN_NAME": "yambda_continue_v1_seed42",
+    "SEED": 42,
+    "TRAIN_EXAMPLES": 500000,
+    "REWARD_EXAMPLES": 600000,
+    "EPOCHS": 20,
+    "BATCH_SIZE": 256,
+    "SAVE_EVERY_BATCHES": 100,
+    "SFT_LR": 0.0002,
+    "RUN_REWARD": false,
+    "REWARD_EPOCHS": 8,
+    "REWARD_LR": 0.0001
+  }
+}

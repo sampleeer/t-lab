@@ -1,0 +1,74 @@
+[
+  {
+    "split": "test",
+    "method": "fraction_weak",
+    "ndcg_relative_percent": 0.0,
+    "reward_fraction_relative_percent": 0.0
+  },
+  {
+    "split": "test",
+    "method": "fraction_kl",
+    "ndcg_relative_percent": -0.7330066493959952,
+    "reward_fraction_relative_percent": 0.15862921802967112
+  },
+  {
+    "split": "test",
+    "method": "fraction_conservative",
+    "ndcg_relative_percent": -0.5565916466556575,
+    "reward_fraction_relative_percent": 0.07827679154797096
+  },
+  {
+    "split": "test",
+    "method": "time_kl",
+    "ndcg_relative_percent": -4.328480104104571,
+    "reward_fraction_relative_percent": -0.3829310096765015
+  },
+  {
+    "split": "test",
+    "method": "balanced_h1",
+    "ndcg_relative_percent": -0.7176161739523401,
+    "reward_fraction_relative_percent": -0.061302137328134165
+  },
+  {
+    "split": "test",
+    "method": "balanced_h5",
+    "ndcg_relative_percent": -3.267967655233406,
+    "reward_fraction_relative_percent": -0.05635585200989279
+  },
+  {
+    "split": "extra",
+    "method": "fraction_weak",
+    "ndcg_relative_percent": 0.0,
+    "reward_fraction_relative_percent": 0.0
+  },
+  {
+    "split": "extra",
+    "method": "fraction_kl",
+    "ndcg_relative_percent": 2.231100973465927,
+    "reward_fraction_relative_percent": 0.14398516289573227
+  },
+  {
+    "split": "extra",
+    "method": "fraction_conservative",
+    "ndcg_relative_percent": 1.3071719524353709,
+    "reward_fraction_relative_percent": 0.07113842870472009
+  },
+  {
+    "split": "extra",
+    "method": "time_kl",
+    "ndcg_relative_percent": -5.097997612116412,
+    "reward_fraction_relative_percent": -0.3488384382990817
+  },
+  {
+    "split": "extra",
+    "method": "balanced_h1",
+    "ndcg_relative_percent": 0.32215288125685415,
+    "reward_fraction_relative_percent": -0.053596548387202514
+  },
+  {
+    "split": "extra",
+    "method": "balanced_h5",
+    "ndcg_relative_percent": -1.817258625354834,
+    "reward_fraction_relative_percent": -0.046787906376988264
+  }
+]

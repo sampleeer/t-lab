@@ -1,0 +1,9 @@
+{
+  "bucket": 1,
+  "events": 4000,
+  "users": 845,
+  "target_coverage": 0.31175,
+  "train_user_overlap": 0,
+  "selection_lock_sha256": "cb601814dc597f1d5ff8e79ba49fca3b966f4e331552303c0c11c60e9bdf1e8a",
+  "sha256": "8bcc5a32d8e7eb9900596d6e4097fdef696ad4f81c0a4f9bbd01295e8a26636d"
+}

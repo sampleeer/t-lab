@@ -1,0 +1,42 @@
+{
+  "train": {
+    "n": 160000,
+    "timestamp_min": 710,
+    "timestamp_max": 19932580,
+    "length_min": 3,
+    "length_max": 24,
+    "all_padding_after_length": true,
+    "all_continuation_binary": true,
+    "fraction_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "validation": {
+    "n": 4000,
+    "timestamp_min": 19934705,
+    "timestamp_max": 23084390,
+    "length_min": 3,
+    "length_max": 24,
+    "all_padding_after_length": true,
+    "all_continuation_binary": true,
+    "fraction_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "test": {
+    "n": 4000,
+    "timestamp_min": 23088510,
+    "timestamp_max": 25997695,
+    "length_min": 4,
+    "length_max": 24,
+    "all_padding_after_length": true,
+    "all_continuation_binary": true,
+    "fraction_range": [
+      0.0,
+      1.0
+    ]
+  },
+  "chronology_ok": true
+}

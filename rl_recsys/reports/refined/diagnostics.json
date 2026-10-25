@@ -1,0 +1,26 @@
+{
+  "test": {
+    "mean_policy_weighted_action_sd": 0.018537670373916626,
+    "between_user_expected_fraction_sd": 0.25942546129226685,
+    "fraction_rmse_actions_shuffled": 0.3003676235675812,
+    "fraction_rmse_real_actions": 0.2988065481185913,
+    "history_baseline_rmse": {
+      "last_fraction": 0.44135868549346924,
+      "last3_mean": 0.3694866215441115,
+      "last24_mean": 0.3717149834843949,
+      "past_all_mean": 0.3975876569747925
+    }
+  },
+  "extra": {
+    "mean_policy_weighted_action_sd": 0.017965206876397133,
+    "between_user_expected_fraction_sd": 0.2369973510503769,
+    "fraction_rmse_actions_shuffled": 0.2961178719997406,
+    "fraction_rmse_real_actions": 0.2944742441177368,
+    "history_baseline_rmse": {
+      "last_fraction": 0.42846688628196716,
+      "last3_mean": 0.37557138173926186,
+      "last24_mean": 0.3630983707876946,
+      "past_all_mean": 0.3945571780204773
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "checkpoint_sha256": "69210ed9aa7719895b1c3d81466bf0c29aa4f325cce461557253dea06c3fa062",
+  "source": "/Users/pavelnehaenko/Downloads/best.pt",
+  "bytes": 1480716,
+  "strict_state_dict_load": true,
+  "all_tensors_finite": true,
+  "parameter_count": 368002,
+  "tensor_count": 29,
+  "changed_tensors_vs_original": 29,
+  "catalog_sha256": "deddde829f9d8bd35508ffa01693b39e09b23e507fdae72ccca34a522f47a9b8",
+  "original_config_sha256": "6b1d9e6d2b8fb4704569b14f3f1342d5a95973f0a9391ed0c3f5c26e70fa200f",
+  "notebook_sha256": "19e8626cdaf0921b52066213672f3af35d2d4677827dfc793cfa80b3417e01d4",
+  "training_metadata_embedded": false,
+  "inference_device": "cpu",
+  "torch": "2.9.1",
+  "original_models_preserved": true,
+  "rm_status": "Original RM and auditor; not retrained in Colab",
+  "test_status": "Existing previously inspected test; this comparison is exploratory, not a new blind holdout",
+  "matches_notebook_validation_rounded": true
+}

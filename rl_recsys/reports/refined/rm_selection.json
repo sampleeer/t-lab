@@ -1,0 +1,49 @@
+{
+  "architectures": [
+    {
+      "hidden": 0,
+      "epoch": 6,
+      "joint_mse": 0.09386918693780899,
+      "path": "artifacts/refined/rm_h0.pt"
+    },
+    {
+      "hidden": 32,
+      "epoch": 6,
+      "joint_mse": 0.0879688486456871,
+      "path": "artifacts/refined/rm_h32.pt"
+    }
+  ],
+  "selected": {
+    "hidden": 32,
+    "epoch": 6,
+    "joint_mse": 0.0879688486456871,
+    "path": "artifacts/refined/rm_h32.pt"
+  },
+  "auditor_epoch": 6,
+  "validation": {
+    "item_mean": {
+      "joint_mse": 0.1323227882385254,
+      "fraction_rmse": 0.4380623400211334,
+      "fraction_mae": 0.40401166677474976,
+      "continuation_brier": 0.07274693995714188,
+      "continuation_auc": 0.558816839819217,
+      "events": 1370
+    },
+    "reward": {
+      "joint_mse": 0.0879688486456871,
+      "fraction_rmse": 0.3243396580219269,
+      "fraction_mae": 0.1784304678440094,
+      "continuation_brier": 0.07074148207902908,
+      "continuation_auc": 0.6299377824734402,
+      "events": 1370
+    },
+    "shuffled_history": {
+      "joint_mse": 0.20237575471401215,
+      "fraction_rmse": 0.5757665634155273,
+      "fraction_mae": 0.42601460218429565,
+      "continuation_brier": 0.07324438542127609,
+      "continuation_auc": 0.5444547162059048,
+      "events": 1370
+    }
+  }
+}

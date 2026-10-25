@@ -1,0 +1,57 @@
+{
+  "data_seed": 42,
+  "seeds": [
+    42,
+    2026
+  ],
+  "user_modulus": 10,
+  "user_remainder": 0,
+  "vocab_items": 4096,
+  "context_length": 24,
+  "train_quantile": 0.7,
+  "validation_quantile": 0.85,
+  "train_examples": 80000,
+  "reward_examples": 160000,
+  "eval_examples": 4000,
+  "batch_size": 128,
+  "hidden_size": 64,
+  "layers": 2,
+  "heads": 4,
+  "sft_epochs": 5,
+  "sft_lr": 0.001,
+  "reward_epochs": 8,
+  "reward_lr": 0.003,
+  "rl_steps": 300,
+  "rl_batch_size": 64,
+  "rl_lr": 0.0001,
+  "rl_eval_every": 100,
+  "bootstrap_repetitions": 2000,
+  "threads": 4,
+  "variants": [
+    {
+      "name": "fraction_weak",
+      "reward": "fraction",
+      "beta": 0.01,
+      "horizon": 1
+    },
+    {
+      "name": "fraction_kl",
+      "reward": "fraction",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "name": "time_kl",
+      "reward": "time",
+      "beta": 0.2,
+      "horizon": 1
+    },
+    {
+      "name": "balanced_5step",
+      "reward": "balanced",
+      "beta": 0.2,
+      "horizon": 5
+    }
+  ],
+  "continuation_seconds": 1800
+}

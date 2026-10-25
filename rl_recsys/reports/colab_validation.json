@@ -1,0 +1,15 @@
+{
+  "archive": "/Users/pavelnehaenko/Documents/ChatGPT/\u0442-\u043b\u0430\u0431/deliverables/rl_recsys_colab.zip",
+  "bytes": 36477721,
+  "sha256": "0377136c4b59bcfce118ec4543c3b0125e514698028e436149421a104f386259",
+  "zip_crc_ok": true,
+  "notebook_code_cells_compile": true,
+  "nbformat_validation": true,
+  "unit_tests_passed": 14,
+  "checkpoint_format_version": 2,
+  "mid_epoch_resume_verified": true,
+  "best_retention_verified": true,
+  "legacy_last_migration_verified": true,
+  "failed_write_preserves_checkpoint": true,
+  "cuda_tested": false
+}

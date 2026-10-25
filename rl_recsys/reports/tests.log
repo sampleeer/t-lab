@@ -1,0 +1,17 @@
+test_reinforce_baseline_has_exact_expected_reward_gradient (test_core.ModelTests) ... ok
+test_response_scores_match_all_actions (test_core.ModelTests) ... ok
+test_reward_time_cap (test_core.ModelTests) ... ok
+test_right_padding_cannot_change_next_item_logits (test_core.ModelTests) ... ok
+test_data_catalog_and_priors_do_not_use_future (test_core.ProtocolTests) ... /Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l1dcachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l2cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.l3cachesize'. Detail: [errno 1] Operation not permitted
+/Users/runner/work/crossbow/crossbow/arrow/cpp/src/arrow/util/cpu_info.cc:239: IOError: sysctlbyname failed for 'hw.optional.neon'. Detail: [errno 1] Operation not permitted
+ok
+test_ranking_oov_is_miss_and_macro_weights_users (test_core.ProtocolTests) ... ok
+test_same_timestamp_and_future_never_enter_context (test_core.ProtocolTests) ... ok
+test_shift_handles_padding_and_full_windows (test_core.ProtocolTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.065s
+
+OK
